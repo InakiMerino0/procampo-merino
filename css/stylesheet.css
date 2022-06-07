@@ -1,0 +1,412 @@
+.header__style {
+  position: sticky;
+  top: 0; }
+
+.header__grid {
+  display: grid;
+  grid-template-areas: 'uno dos';
+  justify-content: space-between;
+  padding: 20px 50px;
+  background-color: black; }
+
+.header__logo {
+  grid-area: uno; }
+
+.header__nav {
+  grid-area: dos; }
+
+.header__ul {
+  display: flex;
+  list-style-type: none;
+  text-align: end;
+  margin: 0;
+  padding: 0; }
+
+.header__li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 20px; }
+
+.footer__style {
+  display: grid;
+  grid-template-areas: "uno dos tres";
+  padding: 5px;
+  bottom: 0px;
+  background-color: grey;
+  color: white; }
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  grid-area: uno; }
+
+.footer__navItem {
+  color: white;
+  text-decoration: none; }
+
+.footer__rights {
+  justify-self: center;
+  align-self: end;
+  grid-area: dos; }
+
+.footer__redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-self: center;
+  grid-area: tres; }
+
+.footer__redesImg {
+  width: 70px; }
+
+.footer__redesImg:hover {
+  transform: scale(1.1);
+  transition: 0.3s; }
+
+.key1-cover {
+  background-image: url("../recursos/portadas/index.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 90vh;
+  color: white; }
+
+.key2-cover {
+  background-image: url("../recursos/portadas/servicios.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 90vh;
+  color: white; }
+
+.key3-cover {
+  background-image: url("../recursos/portadas/equipo.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 90vh;
+  color: white; }
+
+.key4-cover {
+  background-image: url("../recursos/portadas/estudio.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 90vh;
+  color: white; }
+
+.key5-cover {
+  background-image: url("../recursos/portadas/contacto.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 90vh;
+  color: white; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat"; }
+
+/* index */
+.article__grid {
+  display: grid;
+  grid-template-areas: 'uno cuatro' 'cinco dos' 'tres seis' 'ocho siete';
+  place-content: center; }
+
+.article__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 102vh;
+  text-align: center;
+  padding: 1rem; }
+
+.article__item1 {
+  background-color: #c5bcb3; }
+
+.article__item2 {
+  background-color: #979ba0; }
+
+.article__img {
+  width: 300px; }
+
+.article__itemA {
+  grid-area: uno; }
+
+.article__itmeB {
+  grid-area: dos; }
+
+.article__itemC {
+  grid-area: tres; }
+
+.article__itemAImg {
+  grid-area: cuatro; }
+
+.article__itemBImg {
+  grid-area: cinco; }
+
+.article__itemCImg {
+  grid-area: seis; }
+
+.article__itemD {
+  grid-area: siete; }
+
+.article__itemDimg {
+  grid-area: ocho; }
+
+.row {
+  height: 15vh;
+  padding: 5rem; }
+
+/* nuestros servicios */
+.container__servicio {
+  display: grid;
+  grid-template-areas: 'uno dos tres' 'cuatro cinco seis';
+  justify-content: center;
+  gap: 30px; }
+
+.container__1 {
+  grid-area: uno; }
+
+.container__2 {
+  grid-area: dos; }
+
+.container__3 {
+  grid-area: tres; }
+
+.container__4 {
+  grid-area: cuatro; }
+
+.container__5 {
+  grid-area: cinco; }
+
+.container__6 {
+  grid-area: seis; }
+
+.container__card {
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh; }
+
+.card:hover {
+  transform: scale(1.1);
+  transition: 0.3s; }
+
+/* portadas */
+.section__title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 4rem;
+  width: fit-content;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5rem;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.section__slogan {
+  width: auto;
+  text-align: center;
+  border-radius: 5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  margin: 1rem; }
+
+.section__subtitle {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  text-align: center; }
+
+.equipo__grid {
+  display: grid;
+  grid-template-areas: 'uno dos' 'cuatro tres' 'cinco seis' 'ocho siete';
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  column-gap: 20px;
+  margin: 1rem; }
+
+.equipo__item {
+  padding-bottom: 20vh;
+  padding-top: 20vh; }
+
+.equipo__1 {
+  grid-area: uno; }
+
+.equipo__2 {
+  grid-area: dos; }
+
+.equipo__3 {
+  grid-area: tres; }
+
+.equipo__4 {
+  grid-area: cuatro; }
+
+.equipo__5 {
+  grid-area: cinco; }
+
+.equipo__6 {
+  grid-area: seis; }
+
+.equipo__7 {
+  grid-area: siete; }
+
+.equipo__8 {
+  grid-area: ocho; }
+
+.programa__grid {
+  display: grid;
+  grid-template-areas: 'uno dos';
+  justify-content: center; }
+
+.programa__card {
+  grid-area: uno; }
+
+.programa__card1 {
+  grid-area: dos; }
+
+.programa__cardStyle {
+  width: 25rem; }
+
+.form__title {
+  text-align: center;
+  padding: 1rem; }
+
+@media (min-width: 541px) and (max-width: 720px) {
+  .key1-cover {
+    background-image: url("../recursos/portadas-tablet/index.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+    color: white; }
+  .key2-cover {
+    background-image: url("../recursos/portadas-tablet/servicios.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+    color: white; }
+  .key3-cover {
+    background-image: url("../recursos/portadas-tablet/equipo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+    color: white; }
+  .key4-cover {
+    background-image: url("../recursos/portadas-tablet/estudio.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+    color: white; }
+  .key5-cover {
+    background-image: url("../recursos/portadas-tablet/contacto.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+    color: white; }
+  .header__grid {
+    display: flex;
+    justify-content: center; }
+  .header__nav {
+    justify-self: flex-end; }
+  /* index */
+  .article__grid {
+    grid-template-areas: 'uno' 'cuatro' 'dos' 'cinco' 'tres' 'seis' 'siete' 'ocho'; }
+  .article__item {
+    height: 50vh; }
+  .article__img {
+    width: 200px; }
+  /* nuestro equipo */
+  .equipo__grid {
+    grid-template-areas: 'uno' 'dos' 'tres' 'cuatro' 'cinco' 'seis' 'siete' 'ocho'; }
+  .equipo__img {
+    width: 400px; }
+  .equipo__item {
+    padding-bottom: 7vh;
+    padding-top: 7vh; }
+  .container__servicio {
+    grid-template-areas: 'uno' 'dos' 'tres' 'cuatro' 'cinco' 'seis'; }
+  /* programas de tv */
+  .programa__grid {
+    grid-template-areas: 'uno' 'dos'; }
+  .footer__style {
+    grid-template-areas: 'uno tres' 'dos dos';
+    row-gap: 30px; } }
+
+@media (min-width: 320px) and (max-width: 540px) {
+  .body {
+    padding: 3px; }
+  .header__grid {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+  .key1-cover {
+    background-image: url("../recursos/portadas-mobile/index.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+    color: white; }
+  .key2-cover {
+    background-image: url("../recursos/portadas-mobile/servicios.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+    color: white; }
+  .key3-cover {
+    background-image: url("../recursos/portadas-mobile/equipo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+    color: white; }
+  .key4-cover {
+    background-image: url("../recursos/portadas-mobile/estudio.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+    color: white; }
+  .key5-cover {
+    background-image: url("../recursos/portadas-mobile/contacto.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+    color: white; }
+  .cover__title {
+    font-size: 2rem; }
+  .article__subtitle {
+    font-size: 1.5rem; }
+  .article__text {
+    font-size: 1rem; }
+  .article__grid {
+    grid-template-areas: 'uno' 'cuatro' 'dos' 'cinco' 'tres' 'seis' 'siete' 'ocho'; }
+  .article__img {
+    width: 150px; }
+  .section__title {
+    font-size: 2rem; }
+  .section__subtitle {
+    font-size: 1.5rem; }
+  .section__integrante {
+    font-size: 1rem; }
+  /* nuestro equipo */
+  .equipo__grid {
+    grid-template-areas: 'uno' 'dos' 'tres' 'cuatro' 'cinco' 'seis' 'siete' 'ocho'; }
+  .equipo__img {
+    width: 250px; }
+  .equipo__item {
+    padding-bottom: 5vh;
+    padding-top: 5vh; }
+  .container__servicio {
+    grid-template-areas: 'uno' 'dos' 'tres' 'cuatro' 'cinco' 'seis'; }
+  .article__img {
+    width: 100px; }
+  .section__img {
+    height: 250px; }
+  .servicios {
+    grid-template-areas: 'uno' 'dos' 'tres' 'cuatro' 'cinco' 'seis'; }
+  /* programas de tv */
+  .programa__grid {
+    grid-template-areas: 'uno' 'dos'; }
+  .programa__cardStyle {
+    width: 15rem; }
+  .footer__style {
+    grid-template-areas: 'uno' 'tres' 'dos';
+    justify-content: center;
+    gap: 30px; }
+  .footer__nav {
+    text-align: center; }
+  .footer__rights {
+    text-align: center;
+    font-size: 1rem; } }

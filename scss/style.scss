@@ -1,0 +1,428 @@
+@import '_variables';
+@import '_header';
+@import '_footer';
+@import '_cover';
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $font-principal;
+}
+
+/* index */
+
+.article{
+    &__grid {
+    display: grid;
+    grid-template-areas: 'uno cuatro'
+                        'cinco dos'
+                        'tres seis'
+                        'ocho siete';
+    place-content: center;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 102vh;
+        text-align: center;
+        padding: 1rem;
+    }
+    &__item1{
+        background-color: #c5bcb3;
+    }
+    &__item2{
+        background-color: #979ba0;
+    }
+    &__img{
+        width: 300px;
+    }
+    &__itemA {
+        grid-area: uno;
+    }
+    &__itmeB {
+        grid-area: dos;
+    }
+    &__itemC {
+        grid-area: tres;
+    }
+    &__itemAImg {
+        grid-area: cuatro;
+    }
+    &__itemBImg {
+        grid-area: cinco;
+    }
+    &__itemCImg {
+        grid-area: seis;
+    }
+    &__itemD{
+        grid-area: siete;
+    }
+    &__itemDimg{
+        grid-area: ocho;
+    }
+}
+
+
+.row{
+    height: 15vh;
+    padding: 5rem;
+}
+
+/* nuestros servicios */
+
+.container{
+    &__servicio{
+    display: grid;
+    grid-template-areas: 'uno dos tres'
+                        'cuatro cinco seis';
+    justify-content: center;
+    gap: 30px;
+    }
+    &__1{
+        grid-area: uno;
+    }
+    &__2{
+        grid-area: dos;
+    }
+    &__3{
+        grid-area: tres;
+    }
+    &__4{
+        grid-area: cuatro;
+    }
+    &__5{
+        grid-area: cinco;
+    }
+    &__6{
+        grid-area: seis;
+    }
+    &__card{
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
+    }
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* portadas */
+
+.section{
+    &__title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    width: fit-content;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    }
+    &__slogan{
+        width: auto;
+        text-align: center;
+        border-radius: 5rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+        margin: 1rem;
+    }
+    &__subtitle{
+        font-family: 'Oswald', sans-serif;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+.equipo{
+    &__grid{
+        display: grid;
+        grid-template-areas: 'uno dos'
+                            'cuatro tres'
+                            'cinco seis'
+                            'ocho siete';
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        column-gap: 20px;
+        margin: 1rem;
+    }
+    &__item{
+        padding-bottom: 20vh;
+        padding-top: 20vh;
+    }
+    &__1{
+        grid-area: uno;
+    }
+    &__2{
+        grid-area: dos;
+    }
+    &__3{
+        grid-area: tres;
+    }
+    &__4{
+        grid-area: cuatro;
+    }
+    &__5{
+        grid-area: cinco;
+    }
+    &__6{
+        grid-area: seis;
+    }
+    &__7{
+        grid-area: siete;
+    }
+    &__8{
+        grid-area: ocho;
+    }
+}
+.programa{
+    &__grid{
+        display: grid;
+        grid-template-areas: 'uno dos';
+        justify-content: center;
+    }
+    &__card{
+        grid-area: uno;
+    }
+    &__card1{
+        grid-area: dos;
+    }
+    &__cardStyle{
+        width: 25rem;
+    }
+}
+
+.form{
+    &__title{
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 541px) and (max-width: 720px){
+    $portadas: (key1: index, key2: servicios, key3: equipo, key4: estudio, key5: contacto);
+    @each $key, $foto in $portadas{
+        .#{$key}-cover{
+            background-image: url('../recursos/portadas-tablet/#{$foto}.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            height: 90vh;
+            color: white;
+        }
+    } 
+
+    .header{
+        &__grid{
+            display: flex;
+            justify-content: center;
+        }
+        &__nav{
+            justify-self: flex-end;
+        }
+    }
+
+/* index */
+    .article{
+        &__grid{
+            grid-template-areas: 'uno'
+                                'cuatro'
+                                'dos'
+                                'cinco'
+                                'tres'
+                                'seis'
+                                'siete'
+                                'ocho';
+        }
+        &__item{
+            height: 50vh;
+        }
+        &__img{
+            width: 200px;
+        }
+    }
+
+
+/* nuestro equipo */
+    .equipo{
+        &__grid{
+            grid-template-areas: 'uno'
+                                'dos'
+                                'tres'
+                                'cuatro'
+                                'cinco'
+                                'seis'
+                                'siete'
+                                'ocho';
+        }
+        &__img{
+            width: 400px;
+        }
+        &__item{
+            padding-bottom: 7vh;
+            padding-top: 7vh;
+        }
+    }
+
+
+    .container{
+        &__servicio{
+            grid-template-areas: 'uno'
+                                'dos'
+                                'tres'
+                                'cuatro'
+                                'cinco'
+                                'seis';
+        }
+    }
+
+    /* programas de tv */
+
+    .programa{
+        &__grid{
+            grid-template-areas: 'uno'
+                                'dos';
+        }
+    }
+
+    .footer{
+        &__style{
+            grid-template-areas: 'uno tres'
+                                'dos dos';
+            row-gap: 30px;
+        }
+        }
+    
+}
+@media (min-width: 320px) and (max-width: 540px){
+    .body{
+        padding: 3px;
+    }
+    .header{
+        &__grid{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+
+    $portadas: (key1: index, key2: servicios, key3: equipo, key4: estudio, key5: contacto);
+    @each $key, $foto in $portadas{
+        .#{$key}-cover{
+            background-image: url('../recursos/portadas-mobile/#{$foto}.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            height: 90vh;
+            color: white;
+        }
+    } 
+    .cover__title{
+        font-size: 2rem;
+    }
+    .article{
+        &__subtitle{
+            font-size: 1.5rem;
+        }
+        &__text{
+            font-size: 1rem;
+        }
+        &__grid{
+            grid-template-areas: 'uno'
+                                'cuatro'
+                                'dos'
+                                'cinco'
+                                'tres'
+                                'seis'
+                                'siete'
+                                'ocho';
+        }
+        &__img{
+            width: 150px;
+        }
+    }
+    .section{
+        &__title{
+            font-size: 2rem;
+        }
+        &__subtitle{
+            font-size: 1.5rem;
+        }
+        &__integrante{
+            font-size: 1rem;
+        }
+    }
+
+
+/* nuestro equipo */
+    .equipo{
+        &__grid{
+            grid-template-areas: 'uno'
+                                'dos'
+                                'tres'
+                                'cuatro'
+                                'cinco'
+                                'seis'
+                                'siete'
+                                'ocho';
+        }
+        &__img{
+            width: 250px;
+        }
+        &__item{
+            padding-bottom: 5vh;
+            padding-top: 5vh;
+        }
+    }
+
+    .container__servicio{
+        grid-template-areas: 'uno'
+                            'dos'
+                            'tres'
+                            'cuatro'
+                            'cinco'
+                            'seis';
+    }
+    .article__img{
+        width: 100px;
+    }
+    .section__img{
+        height: 250px;
+    }
+    .servicios{
+        grid-template-areas: 'uno'
+                            'dos'
+                            'tres'
+                            'cuatro'
+                            'cinco'
+                            'seis';
+    }
+
+/* programas de tv */
+
+    .programa{
+        &__grid{
+            grid-template-areas: 'uno'
+                                'dos';
+        }
+        &__cardStyle{
+            width: 15rem;
+        }
+    }
+
+    .footer{
+        &__style{
+            grid-template-areas: 'uno'
+                                'tres'
+                                'dos';
+            justify-content: center;
+            gap: 30px;
+        }
+        &__nav{
+            text-align: center;
+        }
+        &__rights{
+            text-align: center;
+            font-size: 1rem;
+        }
+    }
+}

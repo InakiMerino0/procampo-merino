@@ -1,0 +1,39 @@
+.footer{
+    &__style {
+        display: grid;
+        grid-template-areas: "uno dos tres";
+        padding: 5px;
+        bottom: 0px;
+        background-color: grey;
+        color: white;
+    }
+    &__nav{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        grid-area: uno;
+    }
+    &__navItem{
+        color: white;
+        text-decoration: none;
+    }
+    &__rights{
+        justify-self: center;
+        align-self: end;
+        grid-area: dos;
+    }
+    &__redes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-self: center;
+        grid-area: tres;   
+    }
+    &__redesImg{
+        width: 70px;
+    }
+    &__redesImg:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+}

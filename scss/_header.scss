@@ -1,0 +1,31 @@
+.header{
+    &__style{
+        position: sticky;
+        top: 0;
+    }
+    &__grid {
+        display: grid;
+        grid-template-areas: 'uno dos';
+        justify-content: space-between;
+        padding: 20px 50px;
+        background-color: black;
+    }
+    &__logo{
+        grid-area: uno;
+    }
+    &__nav{
+        grid-area: dos;
+    }
+    &__ul {
+        display: flex;
+        list-style-type: none;
+        text-align: end;
+        margin: 0;
+        padding: 0;
+    }
+    &__li {
+        display: inline-block;
+        list-style: none;
+        padding: 0 20px;
+    }
+}

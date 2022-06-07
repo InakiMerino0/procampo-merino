@@ -1,0 +1,10 @@
+$portadas: (key1: index, key2: servicios, key3: equipo, key4: estudio, key5: contacto);
+@each $key, $foto in $portadas{
+    .#{$key}-cover{
+        background-image: url('../recursos/portadas/#{$foto}.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        height: 90vh;
+        color: white;
+    }
+}   

@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat'; }
+
+body {
+  padding: 5px; }
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 1; }
+
+.header__style {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: black; }
+
+.header__ul {
+  display: flex;
+  list-style-type: none;
+  text-align: end;
+  margin: 0;
+  padding: 0; }
+
+.header__li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 20px; }
+
+.cover {
+  height: 90vh;
+  background-image: url(../recursos/logoFondo.png);
+  color: white; }
+
+.article__grid {
+  display: grid;
+  grid-template-areas: "uno cuatro" "cinco dos" "tres seis";
+  place-content: center;
+  row-gap: 400px;
+  column-gap: 200px; }
+
+.article__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 450px; }
+
+.article__itemA {
+  grid-area: uno; }
+
+.article__itmeB {
+  grid-area: dos; }
+
+.article__itemC {
+  grid-area: tres; }
+
+.article__itemAImg {
+  grid-area: cuatro; }
+
+.article__itemBImg {
+  grid-area: cinco; }
+
+.article__itemCImg {
+  grid-area: seis; }
+
+button:hover {
+  transform: scale(1.1);
+  transition: 0.3s; }
+
+.section__grid {
+  display: grid;
+  grid-template-areas: "uno dos" "cuatro tres" "cinco seis" "ocho siete";
+  place-content: center;
+  column-gap: 100px;
+  row-gap: 500px; }
+
+.section__integrante1 {
+  grid-area: uno; }
+
+.section__integrante1img {
+  grid-area: dos; }
+
+.section__integrante2 {
+  grid-area: tres; }
+
+.section__integrante2img {
+  grid-area: cuatro; }
+
+.section__integrante3 {
+  grid-area: cinco; }
+
+.section__integrante3img {
+  grid-area: seis; }
+
+.section__integrante4 {
+  grid-area: siete; }
+
+.section__integrante4img {
+  grid-area: ocho; }
+
+.section__tarjeta {
+  font-size: 1rem; }
+
+.section__list {
+  list-style-type: none; }
+
+.card:hover {
+  transform: scale(1.1);
+  transition: 0.3s; }
+
+.section__title {
+  font-size: 4rem;
+  text-align: center; }
+
+.section__subtitle {
+  font-size: 2rem;
+  text-align: center; }
+
+.section__form {
+  gap: 30px; }
+
+footer {
+  padding: 5px;
+  bottom: 0px;
+  background-color: grey;
+  color: white; }
+
+.footer {
+  display: grid;
+  grid-template-areas: "uno dos tres"; }
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  grid-area: uno; }
+
+.footer__navItem {
+  color: white;
+  text-decoration: none; }
+
+.footer__rights {
+  justify-self: center;
+  align-self: end;
+  grid-area: dos; }
+
+.footer__redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-self: center;
+  grid-area: tres; }
+
+.footer__redesImg {
+  width: 70px; }
+
+.footer__redesImg:hover {
+  transform: scale(1.1);
+  transition: 0.3s; }
+
+@media (min-width: 541px) and (max-width: 720px) {
+  .header__style {
+    display: flex;
+    flex-direction: column; }
+  .article__grid {
+    grid-template-areas: "uno" "cuatro" "dos" "cinco" "tres" "seis";
+    gap: 50px; }
+  .section__integrante {
+    font-size: 1rem; }
+  .section__grid {
+    grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis" "siete" "ocho";
+    gap: 50px; }
+  .section__img {
+    height: 450px; }
+  .servicios {
+    display: grid;
+    grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis"; }
+  .footer {
+    display: grid;
+    grid-template-areas: "uno" "tres" "dos";
+    gap: 30px; } }
+
+@media (min-width: 320px) and (max-width: 540px) {
+  .body {
+    padding: 3px; }
+  .header__style {
+    display: flex;
+    flex-direction: column; }
+  .header__ul {
+    display: flex;
+    flex-direction: column; }
+  .cover__title {
+    font-size: 2rem; }
+  .article__subtitle {
+    font-size: 1.5rem; }
+  .article__text {
+    font-size: 1rem; }
+  .article__grid {
+    grid-template-areas: "uno" "cuatro" "dos" "cinco" "tres" "seis";
+    gap: 50px; }
+  .section__title {
+    font-size: 2rem; }
+  .section__subtitle {
+    font-size: 1.5rem; }
+  .section__integrante {
+    font-size: 1rem; }
+  .section__grid {
+    grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis" "siete" "ocho";
+    gap: 50px;
+    place-content: center; }
+  .article__img {
+    width: 100px; }
+  .section__img {
+    height: 250px; }
+  .servicios {
+    display: grid;
+    grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis"; }
+  .footer {
+    display: grid;
+    grid-template-areas: "uno" "tres" "dos";
+    gap: 30px; } }
