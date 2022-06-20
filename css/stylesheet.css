@@ -115,7 +115,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 102vh;
+  height: 70vh;
   text-align: center;
   padding: 1rem; }
 
@@ -152,16 +152,20 @@
 .article__itemDimg {
   grid-area: ocho; }
 
-.row {
-  height: 15vh;
-  padding: 5rem; }
-
 /* nuestros servicios */
 .container__servicio {
   display: grid;
   grid-template-areas: 'uno dos tres' 'cuatro cinco seis';
   justify-content: center;
   gap: 30px; }
+
+.container__card {
+  background-color: #DFDFDF;
+  /* border-top: 0rem; */
+  border-radius: 1rem;
+  border-color: black;
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh; }
 
 .container__1 {
   grid-area: uno; }
@@ -180,10 +184,6 @@
 
 .container__6 {
   grid-area: seis; }
-
-.container__card {
-  margin-top: 2.5vh;
-  margin-bottom: 2.5vh; }
 
 .card:hover {
   transform: scale(1.1);
@@ -212,18 +212,23 @@
   font-size: 2rem;
   text-align: center; }
 
+/* nuestro equipo */
 .equipo__grid {
   display: grid;
   grid-template-areas: 'uno dos' 'cuatro tres' 'cinco seis' 'ocho siete';
   justify-content: center;
   align-items: center;
   text-align: center;
-  column-gap: 20px;
+  column-gap: 6rem;
   margin: 1rem; }
 
 .equipo__item {
-  padding-bottom: 20vh;
-  padding-top: 20vh; }
+  padding-bottom: 5vh;
+  padding-top: 5vh; }
+
+.equipo__parrafo {
+  width: 40rem;
+  padding: 1rem; }
 
 .equipo__1 {
   grid-area: uno; }
@@ -249,6 +254,7 @@
 .equipo__8 {
   grid-area: ocho; }
 
+/* programas de tv */
 .programa__grid {
   display: grid;
   grid-template-areas: 'uno dos';
@@ -261,7 +267,15 @@
   grid-area: dos; }
 
 .programa__cardStyle {
-  width: 25rem; }
+  width: 25rem;
+  border-radius: 1rem; }
+
+/* contacto */
+.form__style {
+  background-color: #DFDFDF;
+  border-radius: 1rem;
+  border-color: black;
+  padding: 5rem; }
 
 .form__title {
   text-align: center;
@@ -298,6 +312,11 @@
     background-attachment: fixed;
     height: 90vh;
     color: white; }
+  /* header */
+  .section__title {
+    margin: 0.5rem; }
+  .section__slogan {
+    margin: 0.5rem; }
   .header__grid {
     display: flex;
     justify-content: center; }
@@ -318,11 +337,15 @@
   .equipo__item {
     padding-bottom: 7vh;
     padding-top: 7vh; }
+  .equipo__parrafo {
+    width: 33rem; }
+  /* nuestros servicios */
   .container__servicio {
     grid-template-areas: 'uno' 'dos' 'tres' 'cuatro' 'cinco' 'seis'; }
   /* programas de tv */
   .programa__grid {
     grid-template-areas: 'uno' 'dos'; }
+  /* footer */
   .footer__style {
     grid-template-areas: 'uno tres' 'dos dos';
     row-gap: 30px; } }
@@ -330,6 +353,7 @@
 @media (min-width: 320px) and (max-width: 540px) {
   .body {
     padding: 3px; }
+  /* header y portada */
   .header__grid {
     display: flex;
     justify-content: center;
@@ -366,12 +390,15 @@
     color: white; }
   .cover__title {
     font-size: 2rem; }
+  /* index */
   .article__subtitle {
     font-size: 1.5rem; }
   .article__text {
     font-size: 1rem; }
   .article__grid {
     grid-template-areas: 'uno' 'cuatro' 'dos' 'cinco' 'tres' 'seis' 'siete' 'ocho'; }
+  .article__itemImg {
+    height: 30vh; }
   .article__img {
     width: 150px; }
   .section__title {
@@ -388,6 +415,9 @@
   .equipo__item {
     padding-bottom: 5vh;
     padding-top: 5vh; }
+  .equipo__parrafo {
+    width: 18rem; }
+  /* nuestros servicios */
   .container__servicio {
     grid-template-areas: 'uno' 'dos' 'tres' 'cuatro' 'cinco' 'seis'; }
   .article__img {
@@ -401,6 +431,7 @@
     grid-template-areas: 'uno' 'dos'; }
   .programa__cardStyle {
     width: 15rem; }
+  /* footer */
   .footer__style {
     grid-template-areas: 'uno' 'tres' 'dos';
     justify-content: center;
